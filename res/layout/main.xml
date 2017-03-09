@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/methodbg" >
+
+            <RelativeLayout
+                android:id="@+id/methodInfoLayout"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/methodinfo" >
+
+                <Button
+                    android:id="@+id/enterMethod"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/entermethod_selector" />
+
+                <TextView
+                    android:id="@+id/methodInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/enterMethod"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/localBreak"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/methodInfoLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/guoguan1" />
+
+            <Button
+                android:id="@+id/onlineFight"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_alignLeft="@id/localBreak"
+                android:layout_alignRight="@id/localBreak"
+                android:layout_below="@id/localBreak"
+                android:background="@drawable/zhengzhan" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/menuMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/menu"
+            android:gravity="center" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/menu" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/systemarket"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/systemset"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/personaldata"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/newpwd"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/help"
+        android:visibility="gone" />
+
+</RelativeLayout>

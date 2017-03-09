@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5" >
+
+        <ViewFlipper
+            android:id="@+id/modelFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/integralInclude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/integralmodel" />
+
+            <include
+                android:id="@+id/challengeInclude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/challengemodel" />
+
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/toleft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toleft"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/toright"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="5"
+            android:background="@drawable/toright"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/menu"
+        android:gravity="center" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/menu" />
+    </LinearLayout>
+
+</LinearLayout>

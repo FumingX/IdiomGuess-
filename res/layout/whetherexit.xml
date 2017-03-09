@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whetherExitLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/whetherExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/juanzhou" />
+
+    <LinearLayout
+        android:id="@+id/exitMessageLayout"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/resultBack"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/exitMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定退出游戏？"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/exitOperateLayout"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/resultBack"
+        android:layout_below="@id/exitMessageLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp" >
+
+        <Button
+            android:id="@+id/yesExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yesbutton_selector" />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/noBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nobutton_selecter" />
+
+    </LinearLayout>
+
+</RelativeLayout>

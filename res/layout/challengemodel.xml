@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/challengeModelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yijuebg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/challengeTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/challengeBook"
+            android:layout_alignLeft="@+id/challengeBook"
+            android:layout_alignRight="@+id/challengeBook" >
+
+            <Button
+                android:id="@+id/listOfOwn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/onlinefri" />
+
+            <Button
+                android:id="@+id/listOfLine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/onlineother1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/challengeBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="35dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/tabbook"
+            android:visibility="visible" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/challengeBook"
+            android:layout_alignLeft="@id/challengeBook"
+            android:layout_alignRight="@id/challengeBook"
+            android:layout_alignTop="@id/challengeBook"
+            android:layout_margin="20dp"
+            layout="@layout/onlineplayerlist" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/challengeBook"
+            android:layout_alignLeft="@id/challengeBook"
+            android:layout_alignRight="@id/challengeBook"
+            android:layout_alignTop="@id/challengeBook"
+            android:layout_margin="20dp"
+            layout="@layout/myfriendlist" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/example/idiomguess2/MainActivity.java" />
+        <ignore path="src/com/example/idiomguess2/OnlinePlatformActivity.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/example/idiomguess2/GameActivity.java" />
+    </issue>
+    <issue id="WrongCall">
+        <ignore path="src/com/example/idiomguess2/GameView.java" />
+    </issue>
+</lint>

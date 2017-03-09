@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/helpLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<ImageView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/help" />
+    
+    <Button
+        android:id="@+id/closeHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/help"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/closewin2" />
+
+    <TextView
+        android:id="@+id/helpMessage"
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="游戏时要按顺序点击汉字,组成正确的成语。\n模式介绍：\n1.过关斩将：单机闯关模式，在规定时间内找到9个成语即可进入下一关，共108关，每消除1个得100分，连击及时间剩余可加分，按照最终分数获取星星金币。\n2.征战四方：网络对战模式，分为一决高下与勇攀高峰两个子模式。\n（1）一决高下：进入模式后先选择对手，可从在线好友中选取，也可从大厅在线玩家中选取，在规定时间内消除个数最多者为胜，当版面中9个成语消除完毕后，系统会自动补充。\n（2）勇攀高峰：分争分夺秒与眼疾手快两个子模式，争分夺秒即在规定时间内，每消除一个得100分，连击有分数奖励；眼疾手快即消除9个成语，连击及剩余时间会有分数奖励。最终将最高比分传上排行榜，与好友竞争。"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
